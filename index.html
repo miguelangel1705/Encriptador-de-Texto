@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Encriptador</title> 
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sankofa+Display&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <img src="./assets/logo.png" alt="Logo" id="logo">
+        <h1>Encriptador de Texto</h1>
+    </header>
+    <div class="contenedor">
+        <div class="caja-texto">
+            <textarea class="textarea-entrada" placeholder="Ingresa el texto aquí" id="entradaUsuario"></textarea>  
+            <p id="alertaTexto">⚠︎ Solo se permiten letras minúsculas.</p>
+        </div>
+        <div class="contenedor-botones">
+            <button onclick="encriptar();" class="boton-encriptar"></button> 
+            <button onclick="desencriptar();" class="boton-desencriptar"></button> 
+            <button onclick="limpiarAreasTexto();" class="boton-limpiar"></button> 
+        </div>
+        <div class="caja-texto">
+            <textarea class="textarea-salida" placeholder="Aún no ha ingresado ningún texto" id="areaTextoModificado"></textarea> 
+            <button class="copiar-boton" onclick="copiarTexto();">Copiar</button>
+        </div>
+        
+    </div>
+  
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <p class="copyright">&copy; 2024 Miguel A. Orjuela.</p>
+            <div class="seccion-social">
+                <p>Contacto:</p>
+                <div class="social-botones">
+                    <a href="https://linkedin.com/in/miguel-angel-b69b00234" target="_blank" class="social-boton linkedin"></a>
+                    <a href="https://github.com/miguelangel1705" target="_blank" class="social-boton github"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="encriptador.js"></script>
+</body>
+</html>
